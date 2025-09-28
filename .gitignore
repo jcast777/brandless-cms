@@ -34,5 +34,10 @@ docker-compose.override.yml
 Dockerfile
 Dockerfile.prod
 Dockerfile.dev
+# Development and local files
+.editorconfig
 API_TOKEN_GUIDE.md
 /database/seeders/database.sqlite
+/database/seeders/*.sqlite
+/deploy
+docker-compose.override.yml
