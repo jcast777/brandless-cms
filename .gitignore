@@ -41,3 +41,4 @@ API_TOKEN_GUIDE.md
 /database/seeders/*.sqlite
 /deploy
 docker-compose.override.yml
+# Dockerfile
