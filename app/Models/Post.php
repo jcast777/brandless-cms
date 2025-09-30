@@ -74,14 +74,14 @@ class Post extends Model implements HasMedia
             $query = $parsedUrl['query'] ?? '';
 
             // Return URL pointing to frontend's image proxy
-            $frontendUrl = config('app.frontend_url');
+            $frontendUrl = config('app.url');
             $proxyUrl = "{$frontendUrl}/api/images/{$path}";
 
             return $query ? "{$proxyUrl}?{$query}" : $proxyUrl;
         } catch (\Exception $e) {
             // Fallback: return frontend proxy URL without signature
             $path = ltrim($this->featured_image, '/');
-            $frontendUrl = config('app.frontend_url');
+            $frontendUrl = config('app.url');
             return "{$frontendUrl}/api/images/{$path}";
         }
     }
