@@ -20,9 +20,10 @@
 /public/storage
 /storage/*.key
 /storage/pail
-# Allow sample_ prefixed files in private storage
+# Track only sample_ prefixed files in private storage
 /storage/app/private/*
 !/storage/app/private/sample_*
+!/storage/app/private/sample_*/
 # Keep existing public storage rules
 /storage/app/public/*
 /vendor
